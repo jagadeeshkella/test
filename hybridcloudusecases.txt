@@ -1,0 +1,127 @@
+
+What Are Managed IT Services?
+Managed Service Providers: Challenges and Considerations
+What is Hybrid Cloud? Examples, Use Cases, and Challenges
+What Is a Hybrid Cloud?
+A hybrid cloud integrates infrastructure components on-premises, private, and public cloud sources into one centralized, distributed computing environment. It enables you to manage and orchestrate traditional and cloud native workloads across various infrastructure components, allowing you to use the most suitable resource for each scenario while centralizing management.
+
+The term “hybrid cloud” typically refers to integrating your on-premises infrastructure with one cloud vendor. You can also integrate on-premises infrastructure with multiple cloud vendors by setting up a hybrid multi-cloud. This lets you combine cloud services and functionality from multiple cloud providers. 
+
+A hybrid multi-cloud lets you choose the most suitable cloud offering for each application and workload and freely shift workloads between private and public clouds as needed. You can also leverage this model to leverage the most cost-effective and efficient cloud resources to improve performance and reduce cloud costs.
+
+This is part of our series of articles about hybrid IT.
+
+In this article:
+
+How Do Hybrid Clouds Work?
+Hybrid Cloud vs. Multi-Cloud
+Hybrid Cloud Architecture
+Traditional Architecture
+Modern Architecture
+Hybrid Cloud Examples and Use Cases
+Hybrid Cloud Challenges
+Support for Legacy Applications
+Implementing Multi-Cloud Deployments
+Compliance
+Hybrid Cloud Management
+Types of Hybrid Cloud Platforms
+Hybrid Cloud Storage with Cloudian
+How Do Hybrid Clouds Work?
+In a hybrid cloud deployment, you use a unified platform to manage your various public and private cloud resources. If you manage each cloud environment separately, you are more likely to use redundant processes and take up more time and resources. Separate management of environments can also raise the risk of a security loophole, especially if you don’t fully optimize all the solutions to work together.
+
+Hybrid cloud architectures help minimize security risks by restricting private data exposure to public cloud environments. These architectures typically include private data centers or clouds and public infrastructure-as-a-service (IaaS) platforms. You access the hybrid cloud platform via a secure network, leveraging a local area network (LAN) and a wide area network (WAN).
+
+When you adopt a hybrid cloud architecture, you might extend the functionalities of an IaaS solution to your private cloud. You must ensure that your private and public cloud environments are compatible and can communicate with each other. You might need to custom-build the private cloud to maximize compatibility and enable an effective hybrid deployment.
+
+IaaS providers like Microsoft Azure and Google Cloud platform provide APIs to help you connect your private resources to the public cloud infrastructure and enable interoperability between cloud services. You might also use a hypervisor to generate virtual machines (VMs) and connect them to the public cloud through a software layer that orchestrates between the different cloud environments.
+
+Hybrid Cloud vs. Multi-Cloud
+In a multi-cloud deployment, you use various public cloud resources and services, usually from different cloud providers. You might use different clouds for specific tasks to leverage the optimal cloud service for each task.
+
+Multi-cloud strategies acknowledge that different cloud providers offer different advantages, which may be suited to the varying needs of each department in an organization. For example, your marketing team may require different functionalities than your development team, and each may benefit from a different cloud service.
+
+You may also choose a multi-cloud strategy to prevent vendor lock-in (overreliance on a single provider) or decrease costs by leveraging cheaper alternatives for specific services. Having multiple clouds helps ensure greater flexibility, allowing you to modify your deployment and add or change cloud environments.
+
+How are hybrid cloud and multi-cloud different?
+While organizations often combine multi-cloud deployments with private cloud and on-premise infrastructure, what defines them is the use of multiple public clouds. Hybrid cloud deployments always include a public and private cloud—this is what defines them as hybrid. In some cases, hybrid clouds can also encompass virtual and physical infrastructure or incorporate multiple public clouds.
+
+Another major difference is that a hybrid cloud combines the private and public infrastructure and services for a unified purpose. In a multi-cloud, each cloud may serve a different need and enable different tasks. In a hybrid cloud, all the components work together. The advantage of this integration is that it enables processes and data from different tasks (and teams) to intersect in a large, unified project. On the other hand, multi-cloud environments usually have a silo effect, with a separate cloud for each team or usage.
+
+Related content: Read our guide to multi-cloud management
+
+Hybrid Cloud Architecture
+No cloud architecture suits every company’s needs. Thousands of vendors offer public clouds, while each organization can produce a custom private cloud to serve its specific needs. When you implement a hybrid cloud deployment, you create a unique setup of cloud and other resources.
+
+No two hybrid cloud architectures are alike, but they generally correspond to the basic principles associated with either traditional or modern architectures.
+
+Traditional Architecture
+A traditional hybrid cloud connects a private cloud to a public cloud, typically involving large, complex middleware iterations. You might build the private cloud yourself or leverage prepackaged infrastructure. You could separately select a public cloud environment to link to your private cloud.
+
+You may need robust middleware to enable the transfer of large volumes of resources between the public and private environments. Alternatively, many cloud providers offer pre-configured VPNs to handle this communication. Popular subscription packages that provide a VPN include:
+
+Google Cloud — Dedicated Interconnect
+Azure — ExpressRoute
+AWS — Direct Connect
+OpenStack — Public Cloud Passport
+Modern Architecture
+Today, most hybrid clouds use a different architecture. Rather than directly connecting the private and public environments, you can ensure that the apps running in separate environments are portable. This approach is akin to building a versatile vehicle that can operate in multiple environments instead of building a fixed road (i.e., middleware) that provides limited flexibility.
+
+Traditional hybrid cloud architectures are much more cumbersome to maintain, while the modern approach achieves the same end by focusing on the applications themselves. Typically, you develop an application as a collection of independent, loosely coupled services, running a specific operating system across all environments and using a central platform to manage all deployments.
+
+This approach lets you extend apps to multiple environments, for example, by running the same operating system (i.e., Linux) everywhere, using cloud native application development and deployment practices, and using an orchestration platform (i.e., Kubernetes) to manage the portable applications.
+
+You can use a single operating system to abstract all hardware requirements, while the orchestration platform can abstract all application requirements. In this consistent, interconnected architecture, you can easily move applications between different environments. You don’t need to maintain complex API maps that you would have to update whenever you change an application or switch to a new cloud provider.
+
+The interconnectivity of a modern hybrid cloud allows your teams to adopt DevOps practices and work together closely. This approach enables cross-team collaboration and environment integration by using containers and microservices.
+
+Related content: Read our guide to hybrid cloud architecture
+
+Hybrid Cloud Examples and Use Cases
+Here are a few common use cases of hybrid cloud:
+
+Digital transformation — businesses often want to modernize their IT infrastructure by adopting the public cloud, but legacy applications and compliance factors can prevent them from shutting down private data centers completely. Hybrid clouds allow businesses to move part of their IT infrastructure to the cloud and keep some applications on-premises.
+Disaster recovery — the hybrid model helps organizations replicate their on-premises workloads and back up data to the cloud. In the event of a data center failure, workloads fail over to the cloud environment and function normally using on-demand cloud resources. This use case requires careful implementation, to avoid issues like bandwidth consumption and management complexity.
+Development and testing — developing and testing applications in the public cloud is cheaper and faster because there is no need to purchase and set up on-premises physical hardware. It also enables setting up environments on-demand in a self-service model, improving developer productivity.
+Data processing — hybrid clouds offer businesses the option to query and perform analytics on locally stored datasets using powerful public cloud services.
+Dynamic workloads — hybrid clouds are especially useful for dynamic or highly variable workloads. For example, a trade order entry system with seasonal spikes in demand is a good candidate for a hybrid cloud. This type of application can provision additional resources in the public cloud to meet spikes in demand—this is known as cloud bursting.
+Experimenting with the cloud — some organizations are taking a hybrid approach to assess potential public cloud migrations. IT teams can experiment with small cloud deployments and learn to work with cloud providers before fully adopting the public cloud.
+Hybrid Cloud Challenges
+Here are some of the main challenges of implementing a hybrid cloud strategy.
+
+Support for Legacy Applications
+A major issue when adopting a hybrid cloud deployment is compatibility between legacy applications and new services and environments. Some applications may work well with one system but not another, making migration to the cloud challenging. Older applications are not always suited to the cloud, even if they perform critical functions.
+
+For example, you might use applications built using Java or .NET, typically with a monolithic architecture. The design of legacy applications typically expects to run on-premises, with all network dependencies and connections built-in. Building modern cloud apps typically involves using loosely coupled microservices, which help minimize latency and downtime.
+
+However, it may be prohibitively expensive or time-consuming to rewrite your legacy applications for the cloud. For critical applications, a rewrite may be complex and specialized. If you move these applications to a hybrid cloud environment, you must ensure the cloud connections have low latency.
+
+Implementing Multi-Cloud Deployments
+Most companies are adopting a multi-cloud approach in addition to a hybrid cloud. The use of multiple clouds presents a challenge because each cloud might have a different management interface or vendor-specific APIs. Different providers offer different cloud services with varying functions, pricing models, and IT skill requirements.
+
+Therefore, you might choose to setup a dedicated hybrid cloud implementation for each purpose, so most applications run on a single cloud environment. However, if you cannot use all the applications across all environments, you need to handle a more complex management strategy with different protection measures to secure each implementation separately.
+
+Compliance
+Another significant challenge for hybrid cloud deployments is maintaining compliance with regulatory requirements and industry standards. Even if you use a secure cloud provider, you need to ensure your organization complies with laws and regulations like GDPR, HIPAA, and PCI DSS. Hybrid cloud implementations add a layer of complexity, requiring you to adopt more security measures.
+
+Maintaining data security and privacy is a core requirement of regulations like HIPPA and GDPR. If your organization is subject to these regulations, you must implement data security measures such as data encryption in storage and transit. These security measures require active involvement— you cannot expect the hybrid cloud to protect your data automatically.
+
+Another compliance issue for hybrid clouds is data locality—you may be legally required to store data in a specific geographical location. The major cloud providers (i.e., AWS, Azure, Oracle, and Google Cloud Platform) may support data locality requirements in some situations, but you have to enable this capability.
+
+However, some cloud providers cannot support your data locality restrictions. In such cases, you might adopt a hybrid cloud strategy that keeps your data in your local database while outsourcing the processing to a cloud service. This type of deployment requires low-latency connections.
+
+Hybrid Cloud Management
+Hybrid cloud management is the process by which an organization controls multiple cloud deployment. It is often implemented through a third-party management platform that provides one interface to control multiple clouds. Administrators can view and control assets in both private and public clouds through a single UI.
+
+Most public cloud service providers offer hybrid cloud management solutions. By linking their own infrastructure and services with those of other vendors, they allow cloud customers to control multiple platforms in a unified manner. This is not difficult to implement in practice, because both private and public clouds are based on the same virtualization technology.
+
+Via hybrid cloud management platforms, administrators can configure or decommission cloud instances, organize assets, and view performance characteristics.
+
+Related content: Read our guide to hybrid cloud management
+
+Types of Hybrid Cloud Platforms
+There are several ways to deploy hybrid cloud platforms. Here are a few deployment models:
+
+Customer managed — private cloud solutions can be deployed as hyperconverged infrastructure, both on-premises and in edge environments. These solutions are increasingly being offered as SaaS solutions.
+Vendor managed — a fully managed hardware and software solution that a vendor can deploy and manage on customer premises. For the customer, this means outsourcing their hybrid cloud operations.
+Partner managed — hybrid cloud solutions are provided by a wide range of cloud and managed infrastructure providers to provide consistent infrastructure and operations, which are compatible with on-premises private cloud solutions.
+Cloud provider managed—the major public cloud providers provide a standard portfolio of cloud services with a consistent infrastructure and solution that is compatible with private cloud solutions.
